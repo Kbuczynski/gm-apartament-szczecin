@@ -1,1 +1,1 @@
-##GM Apartamnet Szczecin landing page
+## GM Apartamnet Szczecin
