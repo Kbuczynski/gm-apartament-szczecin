@@ -1,0 +1,13 @@
+* {
+    font-family: 'Roboto';
+    font-display: optional;
+    font-size: 100%;
+
+    @include respond-to('medium') {
+        font-size: 80%;
+    }
+
+    @include respond-to('small') {
+        font-size: 100%;
+    }
+}
