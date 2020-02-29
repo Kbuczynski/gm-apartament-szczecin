@@ -4,7 +4,7 @@
     font-size: 100%;
 
     @include respond-to('medium') {
-        font-size: 80%;
+        font-size: 85%;
     }
 
     @include respond-to('small') {

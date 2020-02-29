@@ -1,0 +1,48 @@
+.contact {
+    width: 100vw;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        @include title-section();
+        margin-bottom: 4rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+
+        & > a {
+            padding: 1rem;
+            color: $black;
+            font-size: 1.5rem;
+            text-decoration: none;
+            position: relative;
+            cursor: pointer;
+
+            @include respond-to('small') {
+                font-size: 1rem;
+                padding-left: 5rem
+            }
+
+            &:first-child {
+                @include contact-link-icon('\f098');
+            }
+            
+            &:nth-child(2) {
+                @include contact-link-icon('\f0e0');
+            }
+
+            &:nth-child(3) {
+                @include contact-link-icon('\e815');
+            }
+
+            &:nth-child(4) {
+                @include contact-link-icon('\f1c1');
+            }
+        }
+    }
+}

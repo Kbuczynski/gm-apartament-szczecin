@@ -29,24 +29,10 @@
             color: $white;
             font-size: 4.5rem;
             text-align: center;
+            @include title-section();
 
             @include respond-to('small') {
                 font-size: 2rem;
-            }
-
-            &::before {
-                content: "";
-                position: absolute;
-                bottom: -1.5rem;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 25%;
-                border-top: .5rem solid $blue;
-
-                @include respond-to('small') {
-                    border-top: .3rem solid $blue;
-                    bottom: -1rem;
-                }
             }
         }
 

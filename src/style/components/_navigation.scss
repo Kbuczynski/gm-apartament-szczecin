@@ -84,7 +84,7 @@
             padding: 0 1rem;
 
             @include respond-to('small') {
-                padding: 2.5rem 0;
+                padding: 1.5rem 0;
             }
 
             & > a {
@@ -99,6 +99,15 @@
                     font-size: 1.8rem;
                 }
             }
+
+            & > a.active {
+                color: $blue;
+
+                @include respond-to('small') {
+                    color: $white;
+                    text-decoration: underline;
+                }
+            }            
         }
     }
 }

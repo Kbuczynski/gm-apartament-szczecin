@@ -1,0 +1,42 @@
+.footer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0 2rem 0;
+    background-color: $blue;
+    color: $white;
+
+    @include respond-to('small') {
+        flex-direction: column;
+    }
+
+    & p {
+        letter-spacing: .1rem;
+
+        @include respond-to('small') {
+            font-size: .6rem;
+        }
+
+        &:first-child {
+            padding-left: 2rem;
+
+            @include respond-to('small') {
+                padding-left: 1rem;
+                padding-bottom: .5rem;
+            }
+        }
+
+        &:last-child {
+            padding-right: 3rem;
+
+            @include respond-to('small') {
+                padding-left: 1rem;
+            }
+            
+            & > a {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+}

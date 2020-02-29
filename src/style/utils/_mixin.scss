@@ -19,11 +19,6 @@
     }
 }
 
-@mixin main-grid() {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-}
-
 @mixin underline-color-hover() {
     @include respond-to('large') {
         position: relative;
@@ -74,6 +69,41 @@
     color: $white;
     text-align: center;
     cursor: pointer;
+}
+
+@mixin title-section() {
+    font-size: 3.5rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 25%;
+        border-top: .4rem solid $blue;
+
+        @include respond-to('small') {
+            border-top: .3rem solid $blue;
+        }
+    }
+}
+
+@mixin contact-link-icon($icon) {
+    &::before {
+        font-family: 'fontello';
+        content: $icon;
+        position: absolute;
+        left: -1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $blue;
+
+        @include respond-to('small') {
+            left: 3rem;
+        }
+    }
 }
 
 .reset-translate {
