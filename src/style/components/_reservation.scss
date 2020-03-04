@@ -58,7 +58,7 @@
                 }
             }
 
-            & > div {
+            & > a {
                 color: $black;
                 text-decoration: none;
                 position: relative;
@@ -80,10 +80,6 @@
                     left: 0;
                     top: 50%;
                     transform: translateY(-50%);
-
-                    @include respond-to('small') {
-                        left: 5.5rem;
-                    }
                 }
             }
         }

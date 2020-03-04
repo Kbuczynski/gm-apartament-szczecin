@@ -52,7 +52,9 @@ const Reservation = () => {
                         </tbody>
                     </table>
 
-                    <div onClick={() => window.open(`/Regulamin rezerwacji GM Apartament Szczecin.pdf`, "_blank")}>Regulamin rezerwacji (plik pdf)</div>
+                    <a href="/Regulamin rezerwacji GM Apartament Szczecin.pdf" rel="noopener noreferrer" target="_blank" >Regulamin rezerwacji (plik pdf)</a>
+
+                    {/* onClick={() => window.open(`/Regulamin rezerwacji GM Apartament Szczecin.pdf`, "_blank")} */}
                 </div>
                 <div className="reservation__wrapper__payment">
                     <h4>Płatności:</h4>
